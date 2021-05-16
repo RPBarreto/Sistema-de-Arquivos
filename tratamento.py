@@ -9,6 +9,7 @@ from makedir import *
 from readfile import *
 from removefile import *
 from renamefiledir import *
+import re
 
 
 def tratamento(input):
