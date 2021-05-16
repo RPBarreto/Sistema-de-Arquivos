@@ -4,7 +4,7 @@ def createfile(nome):
     totalpath= os.path.join(path,nome)
 
     if os.path.exists(totalpath):
-        print("Arquivo não Existe")
+        print("Arquivo já Existe")
     else:
         f=open(totalpath,"x")
         print("Arquivo criado")
