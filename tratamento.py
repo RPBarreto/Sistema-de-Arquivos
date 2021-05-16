@@ -25,8 +25,8 @@ def tratamento(input):
     if (command[0] == 'rm'):
         removefile(command[1])
     if (command[0] == 'echo'):
-        text = re.search('"(.*)"', input)
-        appendfile(command[-1], text)
+        text = re.findall(r'"([^"]*)"', input)
+        appendfile(command[-1], text[0])
     # malditas aspas
     if (command[0] == 'cat'):
         readfile(command[1])
