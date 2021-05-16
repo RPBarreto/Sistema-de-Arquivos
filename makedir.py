@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
+#from createinode import createinode
 def makedir(nome):
     path = os.getcwd()
     totalpath= os.path.join(path,nome)
     try:
-        if(nome==root):
+        if(nome=='root'):
             raise Exception("Nome Invalido")
         else:
             os.mkdir(totalpath)
@@ -14,3 +15,4 @@ def makedir(nome):
         print("Falha na criação da pasta" % totalpath)
     else:
         print("pasta criada com sucesso")
+        #createinode(totalpath)
