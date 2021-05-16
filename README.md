@@ -6,7 +6,7 @@ Operações sobre arquivos:
     - Remover arquivo (rm arquivo) - Função Feita
     - Escrever no arquivo (echo "conteudo legal" >> arquivo) - TODO
     - Ler arquivo (cat arquivo) - TODO
-    - Copiar arquivo (cp arquivo1 arquivo2) - TODO
+    - Copiar arquivo (cp arquivo1 arquivo2) - Função feita
     - Renomear arquivo (mv arquivo1 arquivo2) - Função Feita
 
 Operações sobre diretórios:
