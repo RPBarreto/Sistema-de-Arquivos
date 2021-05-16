@@ -17,7 +17,8 @@ Operações sobre diretórios:
         * Não esquecer dos arquivos especiais . e .. 
     - Renomear diretorio (mv diretorio1 diretorio2) - Função Feita
 
-TODO:
+TODO: 
+
     - Main
     - Tratamento de string de comando para todas funções
     - Verificar Root na troca de diretório
