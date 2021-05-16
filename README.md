@@ -19,7 +19,11 @@ Operações sobre diretórios:
 
 TODO: 
 
-    - Main
-    - Tratamento de string de comando para todas funções
-    - Verificar Root na troca de diretório
-    - i-nodes
+    - Main - Done
+    - Tratamento de string de comando para todas funções - Done
+    - Verificar Root na troca de diretório - Done
+    - i-nodes:
+    - Criação do i-node principal
+    - criação do i-node por arquivo
+    - Metodos que precisam de verificação com inodes: touch, rm, echo, cp, mv, mkdir, rmdir
+
