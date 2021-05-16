@@ -16,10 +16,9 @@ def tratamento(input):
     comandoRaw.split("")  # nao funciona
 
     if (comando[0] == "SHUTDOWN"):
-        break
+        return(True)
     if (comando[0] == "touch"):
         createfile(comando[1])
-        comando = []
     if (comando[0] == "rm"):
         removefile(comando[1])
     if (comando[0] == "echo"):
@@ -29,10 +28,14 @@ def tratamento(input):
     if (comando[0] == "cp"):
         copyfile(comando[1], comando[2])
     if (comando[0] == "mv"):
-        renamefiledir
-
+        renamefiledir(comando[1])
     if (comando[0] == "mkdir"):
+        makedir(comando[1])
     if (comando[0] == "rmdir"):
+        deletedir(comando[1])
     if (comando[0] == "cd"):
+        changedir(comando[1])
     if (comando[0] == "."):
+        changedir(comando[1])
     if (comando[0] == ".."):
+        changedir(comando[1])
