@@ -1,3 +1,4 @@
+from typing import Text
 import appendfile
 import changedir
 import copyfile
@@ -7,7 +8,7 @@ import makedir
 import readfile
 import removefile
 import renamefiledir
-
+import re
 
 def tratamento(input):
     comando = input
@@ -22,6 +23,8 @@ def tratamento(input):
     if (comando[0] == "rm"):
         removefile(comando[1])
     if (comando[0] == "echo"):
+        text = re.search('"(.*)"', input)
+        appendfile(comando[-1],text)
     # malditas aspas
     if (comando[0] == "cat"):
         readfile(comando[1])
