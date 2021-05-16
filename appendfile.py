@@ -9,4 +9,4 @@ def appendfile(nome,conteudo):
         f.close
 
     else:
-        print("Arquivo criado")
+        print("Arquivo não encontrado")
