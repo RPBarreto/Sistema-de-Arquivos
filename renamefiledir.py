@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
-def renamefiledir(nome):
+def renamefiledir(nome,alvo):
     path = os.getcwd()
     totalpath= os.path.join(path,nome)
+    totalpath2 = os.path.join(path,alvo)
     try:
-        os.rename(totalpath)
+        os.rename(totalpath,alvo)
     except OSError:
         print("Falha na renomeação da pasta ou arquivo" % totalpath)
     else:
