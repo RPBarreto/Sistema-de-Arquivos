@@ -8,3 +8,4 @@ def createfile(nome):
     else:
         f=open(totalpath,"x")
         print("Arquivo criado")
+        f.close
