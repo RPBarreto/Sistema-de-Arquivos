@@ -10,6 +10,3 @@ def appendfile(nome,conteudo):
 
     else:
         print("Arquivo criado")
-
-#def tratamentoappend
-#todo
