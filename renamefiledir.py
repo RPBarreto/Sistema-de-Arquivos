@@ -5,7 +5,7 @@ def renamefiledir(nome,alvo):
     totalpath= os.path.join(path,nome)
     totalpath2 = os.path.join(path,alvo)
     try:
-        os.rename(totalpath,alvo)
+        os.rename(totalpath,totalpath2)
     except OSError:
         print("Falha na renomeação da pasta ou arquivo" % totalpath)
     else:
