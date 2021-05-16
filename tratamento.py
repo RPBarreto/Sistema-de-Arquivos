@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 from typing import Text
-import appendfile
-import changedir
-import copyfile
-import createfile
-import deletedir
-import makedir
-import readfile
-import removefile
-import renamefiledir
-import re
+from appendfile import *
+from changedir import *
+from copyfile import *
+from createfile import *
+from deletedir import *
+from makedir import *
+from readfile import *
+from removefile import *
+from renamefiledir import *
+
 
 def tratamento(input):
     comando = input
@@ -25,7 +25,7 @@ def tratamento(input):
         removefile(comando[1])
     if (comando[0] == "echo"):
         text = re.search('"(.*)"', input)
-        appendfile(comando[-1],text)
+        appendfile(comando[-1], text)
     # malditas aspas
     if (comando[0] == "cat"):
         readfile(comando[1])
