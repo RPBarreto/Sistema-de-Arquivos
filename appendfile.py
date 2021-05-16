@@ -8,6 +8,6 @@ def appendfile(nome,conteudo):
         f=open(totalpath,"a")
         f.write(conteudo)
         f.close
-
+        print("Sucesso")
     else:
         print("Arquivo não encontrado")
