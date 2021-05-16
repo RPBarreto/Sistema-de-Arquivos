@@ -9,6 +9,7 @@ from makedir import *
 from readfile import *
 from removefile import *
 from renamefiledir import *
+from createinode import *
 import re
 
 
@@ -23,6 +24,7 @@ def tratamento(input):
 
     if (command[0] == 'touch'):
         createfile(command[1])
+        createinodefile(command[1])
     if (command[0] == 'rm'):
         removefile(command[1])
     if (command[0] == 'echo'):

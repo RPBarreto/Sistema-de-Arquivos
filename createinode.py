@@ -4,7 +4,7 @@ def createinodefile(nome):
     path = os.getcwd()
     
     totalpath= os.path.join(path,nome)
-    nome = 'inode' + nome + 'txt'
+    nome = 'inode' + nome #+ 'txt'
     totalpath2= os.path.join(path,nome)
 
     if os.path.exists(totalpath2):
@@ -13,6 +13,6 @@ def createinodefile(nome):
         f=open(totalpath2,"w")
         print("Inode criado")
         f.write(totalpath+'\n')
-        f.write(filesize(totalpath)+'\n')
+        f.write(str(filesize(totalpath))+'\n')
         #loop e verificar pra ver quantos blocos pega
         f.close
