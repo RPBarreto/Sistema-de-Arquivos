@@ -16,3 +16,7 @@ Operações sobre diretórios:
     - Trocar de diretório (cd diretorio) - TODO
         * Não esquecer dos arquivos especiais . e .. 
     - Renomear diretorio (mv diretorio1 diretorio2) - Função Feita
+
+TODO:
+Main
+Tratamento String de comando
