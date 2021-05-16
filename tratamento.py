@@ -1,26 +1,38 @@
-newLine = raw_input()
-newLineRaw = newLine
-newLine.split()
-newLineRaw.split("")  # nao funciona
+import appendfile
+import changedir
+import copyfile
+import createfile
+import deletedir
+import makedir
+import readfile
+import removefile
+import renamefiledir
 
-if (newLine[0] == "SHUTDOWN")
-    break
-if (newLine[0] == "touch")
-    createfile(newLine[1])
-    newLine = []
-if (newLine[0] == "rm")
-    removefile(newLine[1])
-if (newLine[0] == "echo")
-# malditas aspas
-if (newLine[0] == "cat")
-    readfile(newLine[1])
-if (newLine[0] == "cp")
-    copyfile(newLine[1], newLine[2])
-if (newLine[0] == "mv")
-    renamefiledir
 
-if (newLine[0] == "mkdir")
-if (newLine[0] == "rmdir")
-if (newLine[0] == "cd")
-if (newLine[0] == ".")
-if (newLine[0] == "..")
+def tratamento(input):
+    comando = raw_input()
+    comandoRaw = comando
+    comando.split()
+    comandoRaw.split("")  # nao funciona
+
+    if (comando[0] == "SHUTDOWN"):
+        break
+    if (comando[0] == "touch"):
+        createfile(comando[1])
+        comando = []
+    if (comando[0] == "rm"):
+        removefile(comando[1])
+    if (comando[0] == "echo"):
+    # malditas aspas
+    if (comando[0] == "cat"):
+        readfile(comando[1])
+    if (comando[0] == "cp"):
+        copyfile(comando[1], comando[2])
+    if (comando[0] == "mv"):
+        renamefiledir
+
+    if (comando[0] == "mkdir"):
+    if (comando[0] == "rmdir"):
+    if (comando[0] == "cd"):
+    if (comando[0] == "."):
+    if (comando[0] == ".."):
