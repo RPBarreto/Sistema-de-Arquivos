@@ -4,8 +4,6 @@ def changedir(nome):
     path = os.getcwd()
     root = 'root'
     last = path.split('\\')
-    print(last)
-    print(path)
     try:
         if (len(nome) >= 2):
             if(nome[0] == '.' and nome[1]=='.' and len(nome)<3 and last[-1]!=root):
