@@ -5,7 +5,7 @@ Operações sobre arquivos:
     - Criar arquivo (touch arquivo) - Função Feita
     - Remover arquivo (rm arquivo) - Função Feita
     - Escrever no arquivo (echo "conteudo legal" >> arquivo) - Feito
-    - Ler arquivo (cat arquivo) - TODO
+    - Ler arquivo (cat arquivo) - Feito
     - Copiar arquivo (cp arquivo1 arquivo2) - Função feita
     - Renomear arquivo (mv arquivo1 arquivo2) - Função Feita
 
