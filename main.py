@@ -1,7 +1,7 @@
 
 from tratamento import tratamento
 shutdown = False
-while (!shutdown)
+while (not shutdown)
 
 tratamento(raw_input())
 
