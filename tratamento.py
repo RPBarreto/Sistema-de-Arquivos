@@ -13,13 +13,14 @@ import re
 
 
 def tratamento(input):
-    #comando = input
-    #comandoRaw = comando
-    command = input.split()
-    # comandoRaw.split("")  # nao funciona
 
+    command = input.split()
+
+    if (len(command) <2 ):
+        return ()
     if (command[0] == 'SHUTDOWN'):
         return(True)
+
     if (command[0] == 'touch'):
         createfile(command[1])
     if (command[0] == 'rm'):
@@ -27,13 +28,17 @@ def tratamento(input):
     if (command[0] == 'echo'):
         text = re.findall(r'"([^"]*)"', input)
         appendfile(command[-1], text[0])
-    # malditas aspas
     if (command[0] == 'cat'):
         readfile(command[1])
     if (command[0] == 'cp'):
-        copyfile(command[1], command[2])
+        if (len(command) == 3):
+            copyfile(command[1], command[2])
+
+
     if (command[0] == 'mv'):
-        renamefiledir(command[1],command[2])
+        if (len(command) == 3):
+            renamefiledir(command[1],command[2])
+
     if (command[0] == 'mkdir'):
         makedir(command[1])
     if (command[0] == 'rmdir'):
