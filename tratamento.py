@@ -33,7 +33,7 @@ def tratamento(input):
     if (command[0] == 'cp'):
         copyfile(command[1], command[2])
     if (command[0] == 'mv'):
-        renamefiledir(command[1])
+        renamefiledir(command[1],command[2])
     if (command[0] == 'mkdir'):
         makedir(command[1])
     if (command[0] == 'rmdir'):
