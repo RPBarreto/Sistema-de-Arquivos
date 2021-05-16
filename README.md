@@ -13,7 +13,7 @@ Operações sobre diretórios:
 
     - Criar diretório (mkdir diretorio) - Função Feita
     - Remover diretório (rmdir diretorio) - só funciona se diretório estiver vazio - Função Feita
-    - Trocar de diretório (cd diretorio) - TODO
+    - Trocar de diretório (cd diretorio) - Feito
         * Não esquecer dos arquivos especiais . e .. 
     - Renomear diretorio (mv diretorio1 diretorio2) - Função Feita
 
