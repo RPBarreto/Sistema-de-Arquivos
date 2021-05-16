@@ -1,7 +1,10 @@
 import os
 def createfile(nome):
-    if os.path.exists(nome):
+    path = os.getcwd()
+    totalpath= os.path.join(path,nome)
+
+    if os.path.exists(totalpath):
         print("Arquivo não Existe")
     else:
-        f=open(nome,"x")
+        f=open(totalpath,"x")
         print("Arquivo criado")
