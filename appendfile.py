@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 def appendfile(nome,conteudo):
     path = os.getcwd()
