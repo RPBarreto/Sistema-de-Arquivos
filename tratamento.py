@@ -10,7 +10,7 @@ import renamefiledir
 
 
 def tratamento(input):
-    comando = raw_input()
+    comando = input
     comandoRaw = comando
     comando.split()
     comandoRaw.split("")  # nao funciona
