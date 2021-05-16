@@ -18,5 +18,7 @@ Operações sobre diretórios:
     - Renomear diretorio (mv diretorio1 diretorio2) - Função Feita
 
 TODO:
-Main
-Tratamento String de comando
+    - Main
+    - Tratamento de string de comando para todas funções
+    - Verificar Root na troca de diretório
+    - i-nodes
