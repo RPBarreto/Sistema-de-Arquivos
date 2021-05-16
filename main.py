@@ -1,9 +1,9 @@
 
 from tratamento import tratamento
 shutdown = False
-while (not shutdown)
+while not( shutdown):
 
-tratamento(raw_input())
+    tratamento(raw_input())
 
 
 
