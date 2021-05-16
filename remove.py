@@ -1,5 +1,5 @@
 import os
-def rm(nome):
+def remove(nome):
     if os.path.exists(nome):
         os.remove(nome)
     else:

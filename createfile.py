@@ -1,5 +1,5 @@
 import os
-def Touch(nome):
+def createfile(nome):
     if os.path.exists(nome):
         print("Arquivo não Existe")
     else:
