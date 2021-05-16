@@ -1,5 +1,5 @@
 import os
-def remove(nome):
+def removefile(nome):
     if os.path.exists(nome):
         os.remove(nome)
     else:
