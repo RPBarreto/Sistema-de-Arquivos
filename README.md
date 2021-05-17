@@ -2,7 +2,7 @@
 
 Sistema de arquivos escrito em Python, a raiz é o diretório /root.
 
-Commandos:
+## Comandos:
 Operações sobre arquivos:
 
     - Criar arquivo (touch nome_arquivo)
@@ -20,7 +20,7 @@ Operações sobre diretórios:
         cd . e cd .. (troca diretorio)
     - Renomear diretorio (mv nome_diretorio1 nome_diretorio2)
 
-Como usar:
+## Como usar:
 
 Necessário Python, os e shutil instalado.
 
@@ -30,6 +30,8 @@ Há persistência e os arquivos serão criados normalmente, podendo ser acessado
 
 Problemas conhecidos:
 Dependendo do sistema, ou interpretador, poderá ocorrer que o sistema reconheça os comandos como comandos nativo do seu terminal, ou seja os verdadeiros e não os implementados nestes algoritmos.
+
+## Integrantes:
 
 Bruno Dias 108349
 
