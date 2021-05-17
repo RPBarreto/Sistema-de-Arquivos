@@ -11,6 +11,7 @@ from removefile import *
 from renamefiledir import *
 from createinode import *
 from updateinode import *
+from sizedir import *
 import re
 
 
@@ -18,7 +19,7 @@ def tratamento(input):
 
     command = input.split()
 
-    if (len(command) <2 ):
+    if (len(command) < 2):
         return ()
     if (command[0] == 'SHUTDOWN'):
         return(True)
@@ -26,6 +27,7 @@ def tratamento(input):
     if (command[0] == 'touch'):
         createfile(command[1])
         createinodefile(command[1])
+        sizedir(command[1])
     if (command[0] == 'rm'):
         removefile(command[1])
     if (command[0] == 'echo'):
@@ -38,10 +40,9 @@ def tratamento(input):
         if (len(command) == 3):
             copyfile(command[1], command[2])
 
-
     if (command[0] == 'mv'):
         if (len(command) == 3):
-            renamefiledir(command[1],command[2])
+            renamefiledir(command[1], command[2])
 
     if (command[0] == 'mkdir'):
         makedir(command[1])
