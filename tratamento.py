@@ -10,6 +10,7 @@ from readfile import *
 from removefile import *
 from renamefiledir import *
 from createinode import *
+from updateinode import *
 import re
 
 
@@ -30,6 +31,7 @@ def tratamento(input):
     if (command[0] == 'echo'):
         text = re.findall(r'"([^"]*)"', input)
         appendfile(command[-1], text[0])
+        updateinodefile(command[-1])
     if (command[0] == 'cat'):
         readfile(command[1])
     if (command[0] == 'cp'):
