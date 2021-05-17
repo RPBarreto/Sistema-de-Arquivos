@@ -1,29 +1,28 @@
 # Sistema de Arquivos
- 
+
+Sistema de arquivos escrito em Python, a raiz é o diretório /root.
+
+Commandos:
 Operações sobre arquivos:
 
-    - Criar arquivo (touch arquivo) - Função Feita(create)
-    - Remover arquivo (rm arquivo) - Função Feita(removefile)
-    - Escrever no arquivo (echo "conteudo legal" >> arquivo) - Feito(appendfile)
-    - Ler arquivo (cat arquivo) - Feito (readfile)
-    - Copiar arquivo (cp arquivo1 arquivo2) - Função feita (copyfile)
-    - Renomear arquivo (mv arquivo1 arquivo2) - Função Feita (renamefiledir)
-
+    - Criar arquivo (touch arquivo)
+    - Remover arquivo (rm arquivo)
+    - Escrever no arquivo (echo "conteudo legal" >> arquivo)
+    - Ler arquivo (cat arquivo)
+    - Copiar arquivo (cp arquivo1 arquivo2)
+    - Renomear arquivo (mv arquivo1 arquivo2)
+    
 Operações sobre diretórios:
 
-    - Criar diretório (mkdir diretorio) - Função Feita (makedir)
-    - Remover diretório (rmdir diretorio) - só funciona se diretório estiver vazio - Função Feita (deletedir)
-    - Trocar de diretório (cd diretorio) - Feito (changedir)
+    - Criar diretório (mkdir diretorio)
+    - Remover diretório (rmdir diretorio) - só funciona se diretório estiver vazio
+    - Trocar de diretório (cd diretorio)
         * Não esquecer dos arquivos especiais . e .. 
-    - Renomear diretorio (mv diretorio1 diretorio2) - Função Feita (renamefiledir)
+    - Renomear diretorio (mv diretorio1 diretorio2)
 
-TODO: 
+Como usar:
+Necessário Python instalado
+Rode o arquivo main.py e já estará pronto para uso
 
-    - Main - Done
-    - Tratamento de string de comando para todas funções - Done
-    - Verificar Root na troca de diretório - Done
-    - i-nodes:
-    - Criação do i-node principal
-    - criação do i-node por arquivo
-    - Metodos que precisam de verificação com inodes: touch, rm, echo, cp, mv, mkdir, rmdir
-
+Problemas conhecidos:
+Dependendo do sistema, ou interpretador, poderá ocorrer que o sistema reconheça os comandos como comandos nativo do seu terminal, ou seja os verdadeiros e não os implementados nestes algoritmos.
