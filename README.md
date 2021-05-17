@@ -21,8 +21,9 @@ Operações sobre diretórios:
     - Renomear diretorio (mv diretorio1 diretorio2)
 
 Como usar:
-Necessário Python instalado
-Rode o arquivo main.py e já estará pronto para uso
+Necessário Python instalado.
+Rode o arquivo main.py e já estará pronto para uso.
+Há persistência e os arquivos serão criados normalmente, podendo ser acessados por outros programas e exploradores de arquivos.
 
 Problemas conhecidos:
 Dependendo do sistema, ou interpretador, poderá ocorrer que o sistema reconheça os comandos como comandos nativo do seu terminal, ou seja os verdadeiros e não os implementados nestes algoritmos.
