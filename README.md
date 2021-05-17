@@ -22,7 +22,7 @@ Operações sobre diretórios:
 
 Como usar:
 
-Necessário Python instalado.
+Necessário Python, os e shutil instalado.
 
 Rode o arquivo main.py e já estará pronto para uso.
 
@@ -32,5 +32,7 @@ Problemas conhecidos:
 Dependendo do sistema, ou interpretador, poderá ocorrer que o sistema reconheça os comandos como comandos nativo do seu terminal, ou seja os verdadeiros e não os implementados nestes algoritmos.
 
 Bruno Dias 108349
+
 Davi Ribeiro 88931
+
 Renan Barreto 85486
