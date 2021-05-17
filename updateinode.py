@@ -12,7 +12,9 @@ def updateinodefile(nome):
     if os.path.exists(totalpath2):
 
         f = (open(totalpath2, "w"))
-        f.writelines([(totalpath+'\n'),(str(filesize(totalpath)) + '\n')])
+        blocks = (int(filesize(totalpath)/4096)) + (filesize(totalpath)%4096 > 0)
+        f.writelines([(totalpath+'\n'),(str(blocks) + '\n')])
+        f.write(str(os.stat(totalpath))+'\n')
         print("Inode Atualizado")
         f.close
     else:
