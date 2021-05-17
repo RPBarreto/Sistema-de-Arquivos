@@ -13,8 +13,6 @@ def createinodefile(nome):
     else:
         f=open(totalpath2,"w")
         print("Inode criado")
-        f.write(totalpath+'\n')
-        print (totalpath2)
-        f.write(str(filesize(totalpath))+'\n')
-        #loop e verificar pra ver quantos blocos pega
+        f.writelines([(totalpath+'\n'),(str(blocks) + '\n')])
+        f.write(str(os.stat(totalpath))+'\n')
         f.close
